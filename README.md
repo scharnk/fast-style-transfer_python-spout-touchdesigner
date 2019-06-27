@@ -29,17 +29,17 @@ This repository is a tensorflow implementation of fast-style transfer in python 
   <li>PyOpenGL</li>
     <ul><code>python -m pip install PyOpenGL==3.1.0</code></ul>
   <li>scipy</li> 
-    <ul>python -m pip install scipy==1.0.0</ul>
+    <ul><code>python -m pip install scipy==1.0.0</code></ul>
   <li>numpy</li> 
-    <ul>python -m pip install numpy==1.13.1</ul>
+    <ul><code>python -m pip install numpy==1.13.1</code></ul>
   <li>pillow (PIL)</li> 
-    <ul>python -m pip install pillow</ul>
+    <ul><code>python -m pip install pillow</code></ul>
   <li>imageio</li> 
-    <ul>python -m pip install imageio (I used 2.5.0)</ul>
+    <ul><code>python -m pip install imageio (I used 2.5.0)</code></ul>
   <li>matplotlib</li> 
-    <ul>python -m pip install matplotlib (I used 3.0.3)</ul>
+    <ul><code>python -m pip install matplotlib (I used 3.0.3)</code></ul>
   <li>scikit-image</li>
-    <ul>python -m pip install scikit-image (I used 0.15.0)</ul>
+    <ul><code>python -m pip install scikit-image (I used 0.15.0)</code></ul>
   <li>Download the pretrained vgg19 imagenet from <a href="http://www.vlfeat.org/matconvnet/models/imagenet-vgg-verydeep-19.mat">here</a></li>
     <ul>Place it in same directory in a folder named 'pre_trained_model'</ul>
   <li>Download MSCOCO train2014 dataset (*12GB*) from <a href="http://msvocds.blob.core.windows.net/coco2014/train2014.zip">here</a></li>
