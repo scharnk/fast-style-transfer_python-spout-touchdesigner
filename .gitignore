@@ -2,3 +2,5 @@
 fast_neural_style/
 
 train2014/
+
+pre_trained_styles/

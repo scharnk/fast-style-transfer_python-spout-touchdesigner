@@ -10,13 +10,13 @@ def parse_args():
     desc = "Tensorflow implementation of 'Perceptual Losses for Real-Time Style Transfer and Super-Resolution'"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--style_model', type=str, default='models/wave.ckpt', help='location for model file (*.ckpt)',
+    parser.add_argument('--style_model', type=str, default='pre_trained_styles/rain_princess.ckpt', help='location for model file (*.ckpt)',
                         required=True)
 
-    parser.add_argument('--content', type=str, default='content/female_knight.jpg',
+    parser.add_argument('--content', type=str, default='content_images/test.jpg',
                         help='File path of content image (notation in the paper : x)', required=True)
 
-    parser.add_argument('--output', type=str, default='result.jpg',
+    parser.add_argument('--output', type=str, default='/styled_images/result.jpg',
                         help='File path of output image (notation in the paper : y_c)', required=True)
 
     parser.add_argument('--max_size', type=int, default=None, help='The maximum width or height of input images')
