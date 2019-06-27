@@ -7,6 +7,3 @@ import SpoutSDK
 x = SpoutSDK.SpoutSender()
 
 print(x.SayHello())
-
-
-
