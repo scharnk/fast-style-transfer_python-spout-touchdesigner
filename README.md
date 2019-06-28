@@ -62,21 +62,21 @@ Before you can test style transfer you either have to download a pre-trained sty
 
 <code>python run_test.py --content content/imageyouwantstylized.jpg --style_model fast_neural_style/rain_princess.ckpt --output stylizedimage.jpg</code><br>
 
-Required parameters:<br>
+<ul>Required parameters:<br>
 --content: Filename of the content image. Default: content/female_knight.jpg <br>
 --style-model: Filename of the style model. Default: models/wave.ckpt <br>
---output: Filename of the output image. Default: result.jpg<br>
-Optional parameter:<br>
---max_size: Maximum width or height of the input images. None do not change image size. Default: None<br>
+--output: Filename of the output image. Default: result.jpg<br></ul>
+<ul>Optional parameter:<br>
+--max_size: Maximum width or height of the input images. None do not change image size. Default: None<br></ul>
 
 <h4>To train models:</h4>
 <code>python run_train.py --style style/stylesourceimage.jpg --output modelname --trainDB train2014 --vgg_model pre_trained_model</code>
 
-Required parameters:<br>
+<ul>Required parameters:<br>
 --style: Filename of the style image. Default: images/wave.jpg<br>
 --output: File path for trained-model. Train-log is also saved here. Default: models<br>
 --trainDB: Relative or absolute directory path to MSCOCO DB. Default: train2014<br>
---vgg_model: Relative or absolute directory path to pre trained model. Default: pre_trained_model<br>
+--vgg_model: Relative or absolute directory path to pre trained model. Default: pre_trained_model<br></ul>
 
 <ul>Optional :<br>
 --content_weight: Weight of content-loss. Default: 7.5e0<br>
