@@ -1,5 +1,7 @@
 # fast-style-transfer_python-spout-touchdesigner
-This repository is a tensorflow implementation of fast-style transfer in python to be sent into touchdesigner. To talk to both programs Spout is required. Commands are written for windows10, linux/mac commands will vary slightly. This repo is designed to be a fully packaged tutorial to get everything running for webcam style transfer video in touchdesigner.
+This repository is a tensorflow implementation of fast-style transfer in python to be sent into touchdesigner. To talk to both programs Spout is required. Commands are written for windows10, linux/mac commands will vary slightly. This repo is designed to be a fully packaged tutorial to get everything running for webcam style transfer video in touchdesigner.<br>
+
+![alt text](https://github.com/scharnk/fast-style-transfer_python-spout-touchdesigner/blob/master/styled_images/proof.png)<br>
 
 <h2>Dependencies</h2>
 <h3>Set Up for Windows10:</h3>
