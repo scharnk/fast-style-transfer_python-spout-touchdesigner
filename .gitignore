@@ -4,3 +4,7 @@ fast_neural_style/
 train2014/
 
 pre_trained_styles/
+
+pre_trained_model/imagenet-vgg-verydeep-19\.mat
+
+murakami_end/
