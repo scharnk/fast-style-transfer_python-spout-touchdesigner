@@ -20,7 +20,7 @@ def parse_args():
     desc = "Tensorflow implementation of 'Perceptual Losses for Real-Time Style Transfer and Super-Resolution', Spout sender/receiver version"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--style_model', type=str, default='pre_trained_styles/wave.ckpt', help='location for model file (*.ckpt)')
+    parser.add_argument('--style_model', type=str, default='pre_trained_styles/rain_princess.ckpt', help='location for model file (*.ckpt)')
 
     parser.add_argument('--spout_size', nargs = 2, type=int, default=[640, 480], help='Width and height of the spout receiver and sender')
 
