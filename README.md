@@ -78,7 +78,7 @@ Required parameters:<br>
 --trainDB: Relative or absolute directory path to MSCOCO DB. Default: train2014<br>
 --vgg_model: Relative or absolute directory path to pre trained model. Default: pre_trained_model<br>
 
-Optional :<br>
+<ul>Optional :<br>
 --content_weight: Weight of content-loss. Default: 7.5e0<br>
 --style_weight: Weight of style-loss. Default: 5e2<br>
 --tv_weight: Weight of total-varaince-loss. Default: 2e2<br>
@@ -92,7 +92,7 @@ Optional :<br>
 --learn_rate: Learning rate for Adam optimizer. Default: 1e-3<br>
 --checkpoint_every: Save-frequency for checkpoint. Default: 1000<br>
 --test: Filename of the content image for test during training. Default: None<br>
---max_size: Maximum width or height of the input image for test. None do not change image size. Default: None<br>
+--max_size: Maximum width or height of the input image for test. None do not change image size. Default: None<br></ul>
 
   <!-- <li><code></code></li>
   <li><code></code></li>
