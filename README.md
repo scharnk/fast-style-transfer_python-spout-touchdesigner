@@ -62,19 +62,19 @@ Before you can test style transfer you either have to download a pre-trained sty
 
 <code>python run_test.py --content content/imageyouwantstylized.jpg --style_model fast_neural_style/rain_princess.ckpt --output stylizedimage.jpg</code><br>
 
-<ul>Required parameters:<br>
---content: Filename of the content image. Default: content/female_knight.jpg <br>
---style-model: Filename of the style model. Default: models/wave.ckpt <br>
---output: Filename of the output image. Default: result.jpg<br></ul>
+<ul>Required parameters (defaults can be found at the top of run_test.py):<br>
+--content: Filename of the content image.<br>
+--style-model: Filename of the style model.<br>
+--output: Filename of the output image.<br></ul>
 <ul>Optional parameter:<br>
 --max_size: Maximum width or height of the input images. None do not change image size. Default: None<br></ul>
 
 <h4>To train models:</h4>
 <code>python run_train.py --style style/stylesourceimage.jpg --output modelname --trainDB train2014 --vgg_model pre_trained_model</code>
 
-<ul>Required parameters:<br>
---style: Filename of the style image. Default: images/wave.jpg<br>
---output: File path for trained-model. Train-log is also saved here. Default: models<br>
+<ul>Required parameters (Defaults can be found at the top of run_train.py):<br>
+--style: Filename of the style image.<br>
+--output: File path for trained-model. Train-log is also saved here.<br>
 --trainDB: Relative or absolute directory path to MSCOCO DB. Default: train2014<br>
 --vgg_model: Relative or absolute directory path to pre trained model. Default: pre_trained_model<br></ul>
 
@@ -109,12 +109,13 @@ When these are working the receiver should open a black window, and the sender s
 Open touchdesigner file (spout.3.toe)<br>
 Make sure videodevin1 is active (toggle=on), and syphonspoutin1 is set to the correct sender and toggle=on<br>
 Make sure sender name in spout_NST_receiver_sender.py matches that in Touch<br>
-Touchdesigner should be open when you run: <code>python spout_NST_receiver_sender.py</code><br>
+Touchdesigner should be open when you run: <code>python spout_NST_receiver_sender.py --style_model ast_neural_style/rain_princess.ckpt</code><br>
 If working, you should see the stylized video feed from the style model you've selected<br>
 
 <h2>Contributors</h2>
 
 <h2>Acknowledgements</h2>
-Fast-style transfer is based on this repo: https://github.com/hwalsuklee/tensorflow-fast-style-transfer <br>
+Some depreciated python modules were replaced but for the most part
+fast-style transfer is based on this repo: https://github.com/hwalsuklee/tensorflow-fast-style-transfer <br>
 Spout for Python was based on this repo: https://github.com/spiraltechnica/Spout-for-Python <br>
 Some set up/dependencies were from Grant Watson's fastyle transfer repository here: https://github.com/ghwatson/faststyle <br>
