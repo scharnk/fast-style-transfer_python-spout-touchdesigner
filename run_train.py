@@ -17,7 +17,7 @@ def parse_args():
                         help='The directory where MSCOCO DB was saved', required=True)
     parser.add_argument('--style', type=str, default='style/wave.jpg', help='File path of style image (notation in the paper : a)', required=True)
     parser.add_argument('--output', type=str, default='models', help='File path for trained-model. Train-log is also saved here.', required=True)
-	
+
     parser.add_argument('--content_weight', type=float, default=7.5e0, help='Weight of content-loss')
     parser.add_argument('--style_weight', type=float, default=5e2, help='Weight of style-loss')
     parser.add_argument('--tv_weight', type=float, default=2e2, help='Weight of total-variance-loss')

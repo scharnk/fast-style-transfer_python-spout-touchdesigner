@@ -13,7 +13,7 @@ def parse_args():
     parser.add_argument('--style_model', type=str, default='pre_trained_styles/rain_princess.ckpt', help='location for model file (*.ckpt)',
                         required=True)
 
-    parser.add_argument('--content', type=str, default='content_images/test.jpg',
+    parser.add_argument('--content', type=str, default='unstyled_images/test.jpg',
                         help='File path of content image (notation in the paper : x)', required=True)
 
     parser.add_argument('--output', type=str, default='/styled_images/result.jpg',
